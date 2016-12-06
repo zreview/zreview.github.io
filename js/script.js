@@ -15,7 +15,7 @@ $(document).ready(function() {
     $('body').removeClass('desktop');
   } else {
     // on window resize set the new positions of the above elements
-    window.onresize = function(){ location.reload();}
+    window.onresize = function(){ location.replace( location.href);}
   }
 
   // some defaults
