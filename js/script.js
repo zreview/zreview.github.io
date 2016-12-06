@@ -199,6 +199,8 @@ $(document).ready(function() {
   ///////////////////////
 
 
+// waits for a critical part to load
+$('#mode1').ready(function() {
   // wrong - correct feedback popup
   $('#wc').css('left', $(window).width()/2 - 90);
   $('#wc').css('top', $('.tabmenu').height() + $('#mode1').height()/2);
@@ -244,5 +246,6 @@ if ( $(window).width() < 400 ) {
   $('#p5').css('left', $(window).width()/2 - 235);
 }
 
+});
 
 });
