@@ -1,0 +1,176 @@
+/* COLORS */
+/*
+lightest blue #E8EAF6
+light blue #C5CAE9
+blue #3F51B5
+darker blue #303F9F
+black #212121
+
+lightest gray #FAFAFA
+gray #EAEAEA
+text black #212121
+accent pink #FF80AB
+*/
+
+@charset "utf-8";
+@-ms-viewport { width: device-width; }
+
+.clearfix:after,
+.container:after {
+	content: '';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0; height: 0;
+	clear: both;
+	}
+.clearfix,
+.container {
+	zoom: 1;
+	}
+
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	}
+
+@font-face {
+    font-family: grlight;
+	src: url(../font/GothamRounded-Light.ttf);
+        src: url(../font/GothamRounded-Light.woff);
+}
+
+@font-face {
+    font-family: grmedium;
+	src: url(../font/GothamRounded-Medium.ttf);
+        src: url(../font/GothamRounded-Medium.woff);
+}
+
+@font-face {
+    font-family: grbold;
+	src: url(../font/GothamRounded-Bold.ttf);
+        src: url(../font/GothamRounded-Bold.woff);
+}
+
+body {
+	font-family: grlight;
+	font-weight: normal;
+	color: #212121;
+	font-size: 100%;
+	line-height: 1.5em;
+	background: #EAEAEA;
+	}
+
+h1 { font-size: 1.5em; color: #444444; font-family: grbold; line-height: 1.2em; text-align: center;}
+h2 { font-size: 2em; color: #444444; font-family: grbold; line-height: 1.2em; text-align: center; margin-bottom: 0.4em;}
+h3 { font-size: 2.5em; color: #444444; font-family: grbold; line-height: 1.2em; text-align: center;}
+
+a,
+a:link,
+a:hover,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+
+.taleft {text-align: left !important;}
+.taright {text-align: right !important;}
+.tacenter {text-align: center !important;}
+.tajustify {text-align: justify !important;}
+
+/* TAB MENU */
+
+.tabmenu {
+	color: #EAEAEA;
+	font-family: grlight;
+	font-weight: normal;
+	font-size: 1.3em;
+	white-space: nowrap;
+	padding: 0em 0em 0em 0em;
+	transition: background-color 0.5s ease;
+}
+
+.desktop .tabmenu a:hover div {
+
+	color: #FFFFFF;
+	transition: background-color 0.5s ease;
+  background-color: #303F9F;
+}
+
+/* gets activated by jQuery */
+.tabmenuhover {
+  color: #FFFFFF;
+	transition: background-color 0.5s ease;
+  background-color: #303F9F;
+
+}
+
+/* FOOTER BUTTONS */
+
+.footer {
+	font-family: grlight;
+	font-weight: normal;
+	font-size: 1.3em;
+
+}
+
+.desktop .footer a:hover div {
+
+	transition: background-color 0.5s ease;
+  background-color: #EAEAEA;
+}
+
+/* gets activated by jQuery */
+.footerhover {
+	transition: 0.2s ease;
+	background-color: #EAEAEA;
+}
+
+/* ARC BUTTONS */
+
+.arc {
+	font-size: 3em;
+	font-family: grmedium;
+  color: #444444;
+}
+
+.arc a div {
+	padding: 0.3em;
+  border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-moz-border-radius: 1em;
+}
+
+.desktop .arc a:hover div {
+	transition: background-color 0.2s ease;
+	background-color: white;
+}
+
+/* gets activated by jQuery */
+.archover {
+	transition: background-color 0.2s ease;
+	background-color: white;
+}
+
+#wc {
+	position: absolute;
+	font-size: 2.5em;
+	font-family: grbold;
+}
+
+#p4 {
+	position: absolute;
+}
+
+#p5 {
+	position: absolute;
+}
+
+#p8 {
+	position: absolute;
+}
